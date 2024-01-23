@@ -30,3 +30,16 @@ const team = [
         image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
+
+/*- Carico Array dei membri del team
+- Prendo le tre informazioni sui membri
+- Stampo le tre informazioni in console log
+- Richiamo un Id dell'HTML dove stampare a schermo le informazioni
+- Sostituisco l'informazione: Foto con una immagine vera
+- Strutturo il mio HTML con style e card*/
+
+for (let infoTeam of team) {
+    console.log(infoTeam.name);
+    console.log(infoTeam.role);
+    console.log(infoTeam.image);
+}
