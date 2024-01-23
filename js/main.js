@@ -38,8 +38,23 @@ const team = [
 - Sostituisco l'informazione: Foto con una immagine vera
 - Strutturo il mio HTML con style e card*/
 
+const cardContainer = document.getElementById('cardInfo');
+
+// CICLO 
 for (let infoTeam of team) {
+    const nameHTML = `
+    <div class="col">
+    <div class="card">
+      <img src="./img/${infoTeam.image}" class="card-img-top imgSize" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${infoTeam.name}</h5>
+        <p class="card-text">${infoTeam.role}</p>
+      </div>
+    </div>
+  </div>`;
     console.log(infoTeam.name);
     console.log(infoTeam.role);
     console.log(infoTeam.image);
-}
+
+    cardContainer.innerHTML += nameHTML;
+};
